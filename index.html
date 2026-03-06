@@ -17,7 +17,8 @@
 
     .iframe-container {
       width: 100%;
-      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
+      height: 100vh;  /* Fallback untuk browser lama */
+      height: 100dvh; /* Dynamic viewport height untuk mobile modern */
       overflow: hidden;
     }
 
@@ -33,8 +34,8 @@
   <div class="iframe-container">
     <iframe
       id="app"
+      title="Aplikasi SIPERFIK TEPRA"
       src="https://script.google.com/macros/s/AKfycbynFu_IG1S8Eu7KDqNROKu0W-yPKX37kjRe9rbnmZsBaNw27G9T-4vXSMZusqwMxMEr/exec"
-      scrolling="yes"
       allowfullscreen="true"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
